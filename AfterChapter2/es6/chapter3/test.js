@@ -39,3 +39,18 @@ console.log(inf);
 let someVal = 23;
 let intr = `New in ES6: ${someVal}`; // Interpolation works only with backtick
 console.log(intr);
+
+const RED = Symbol("RED COLOR SYMBOL");
+const ORANGE = Symbol("RED COLOR SYMBOL");
+
+console.log(RED === ORANGE);
+console.log(RED);
+
+
+let car = {}
+car.color = "Red"
+const size = Symbol(222)
+car[size] = 8
+car["MAKE"] = "Toyota"
+
+console.log(car)

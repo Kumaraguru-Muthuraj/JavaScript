@@ -41,5 +41,16 @@ console.log(nInf);
 console.log(nan);
 console.log(inf);
 var someVal = 23;
-var intr = "New in ES6: ".concat(someVal);
+var intr = "New in ES6: ".concat(someVal); // Interpolation works only with backtick
+
 console.log(intr);
+var RED = Symbol("RED COLOR SYMBOL");
+var ORANGE = Symbol("RED COLOR SYMBOL");
+console.log(RED === ORANGE);
+console.log(RED);
+var car = {};
+car.color = "Red";
+var size = Symbol(222);
+car[size] = 8;
+car["MAKE"] = "Toyota";
+console.log(car);
