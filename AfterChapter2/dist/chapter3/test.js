@@ -79,4 +79,31 @@ cat.speak();
 console.log(cat);
 delete cat.tailLength;
 console.log(cat);
+var arr1 = [34, 45, 43, 32];
+arr1[5] = 444;
+console.log(arr1);
+console.log(arr1.length);
+var now = new Date();
+console.log(now);
+var halloween = new Date(2016, 9, 31); // note that months are
+// zero-based: 9=October
+
+var halloweenParty = new Date(2016, 9, 31, 19, 0); // 19:00 = 7:00 pm
+
+console.log(halloweenParty.getFullYear()); // 2016
+
+console.log(halloweenParty.getMonth()); // 9
+
+console.log(halloweenParty.getDate()); // 31
+
+console.log(halloweenParty.getDay()); // 1 (Mon; 0=Sun, 1=Mon,...)
+
+console.log(halloweenParty.getHours()); // 19
+
+console.log(halloweenParty.getMinutes()); // 0
+
+console.log(halloweenParty.getSeconds()); // 0
+
+console.log(halloweenParty.getMilliseconds()); // 0
+
 console.log("END");
