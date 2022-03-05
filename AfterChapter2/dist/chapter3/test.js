@@ -54,3 +54,29 @@ var size = Symbol(222);
 car[size] = 8;
 car["MAKE"] = "Toyota";
 console.log(car);
+console.log(car.size);
+console.log(car[size]);
+x = 23;
+console.log(x);
+var y = 211; //y = 222;
+
+var cat = {
+  name: "Zoya",
+  sex: "Female",
+  classification: {
+    kingdom: "Animalia",
+    genus: "Felis",
+    species: "catus"
+  },
+  tailLength: "30 cms"
+};
+
+cat.speak = function () {
+  console.log("Saying Meow!");
+};
+
+cat.speak();
+console.log(cat);
+delete cat.tailLength;
+console.log(cat);
+console.log("END");
